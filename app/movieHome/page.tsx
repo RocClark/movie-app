@@ -10,6 +10,16 @@ const MovieData = [
 ]
 
 export default function moiveHome() {
-  return <MovieList movies= {MovieData}/>
-    
+  return (
+  <div>
+  <MovieList movies= {MovieData}/>
+  
+<Link
+  href="/"
+  className="dark:bg-slate-900 bg-slate-400 my-4 p-3 rounded-lg block"
+>
+ return to home page
+</Link>
+</div>
+  )
 }
