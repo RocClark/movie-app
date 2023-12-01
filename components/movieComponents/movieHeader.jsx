@@ -1,15 +1,12 @@
 function Header() {
     return (
         <div className="navbar">
-                <div className="navbar-start">
-                    <a className="navbar-item">Movie</a>
+            <header className="bg-white shadow">
+                <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+                <h1 className="text-3xl font-bold tracking-tight text-gray-900">MovieTitle</h1>
                 </div>
-                <div className="navbar-end">
-                    <a className="navbar-item">Home</a>
-                    <a className="navbar-item">About</a>
-                    <a className="navbar-item">Contact</a>
-                </div>
-            </div>
+            </header>
+        </div>
     );
 }
 
