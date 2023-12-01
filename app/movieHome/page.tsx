@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Header from '../../components/movieComponents/movieHeader' 
+import Link from 'next/link'
 
 const MovieData = [
   {id: 1, name: "The last DJ" },
@@ -10,6 +11,14 @@ const MovieData = [
 export default function moiveHome() {
   return (
     <div>
+      <div>
+    <Link
+      href="/"
+      className="dark:bg-slate-900 bg-slate-400 my-4 p-3 rounded-lg block"
+    >
+     return to home page
+    </Link>
+  </div>
          <p> moive home page</p>
           <div>
           <ul>
