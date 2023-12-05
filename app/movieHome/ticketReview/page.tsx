@@ -1,6 +1,14 @@
 import Image from 'next/image'
+import MovieReview from '../../../components/movieComponents/movieReview'
+import MovieForm from '../../../components/movieComponents/movieForm'
 
 export default function about() {
-  return (<h1> ticket review and fake pay page</h1>
+
+  return (
+    <div>
+      <MovieReview/>
+      <MovieForm/>
+    
+  </div>
   )
 }

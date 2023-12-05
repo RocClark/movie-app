@@ -1,5 +1,6 @@
 import MoiveScreen from '../../../components/movieComponents/movieScrean'
 import SeatList from '../../../components/movieComponents/seatsList'
+import MovieHeader from '../../../components/movieComponents/movieHeader'
 
 import Image from 'next/image'
 
@@ -16,6 +17,7 @@ export default function seatSelect() {
   
   return (
   <div>
+     <MovieHeader/>
     <MoiveScreen/>
     <SeatList/>
     <div >
