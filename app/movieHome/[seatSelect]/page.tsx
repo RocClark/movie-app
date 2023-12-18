@@ -2,13 +2,12 @@ import MoiveScreen from '../../../components/movieComponents/movieScrean'
 import SeatList from '../../../components/movieComponents/seatsList'
 import MovieHeader from '../../../components/movieComponents/movieHeader'
 
-import Image from 'next/image'
 
 
-const MovieData = [
-  {id: 1, seats: 1 },
-  {id: 2, seats: 2 },
-  {id: 3, seats: 3 }
+const SeatData = [
+  {id: 1, seatNum: "1a" },
+  {id: 2, seatNum: "2a" },
+  {id: 3, seatNum: "3a" }
 ]
 
 
@@ -19,7 +18,8 @@ export default function seatSelect() {
   <div>
      <MovieHeader/>
     <MoiveScreen/>
-    <SeatList/>
+    <SeatList seats= {SeatData}/>
+    
     <div >
           <p>show number of seats</p>
         </div>

@@ -1,11 +1,17 @@
+import SeatItem from './seatItems';
 
-
-function SeatList() {
-  return (
-    <p >
-   seats here
-  </p> 
-  );
-}
-
+function SeatList(props: { seats: any[]; }) {
+      return (
+          <ul >
+          {props.seats.map((seat: { id: any; seatNum: any; }) => (
+            <SeatItem
+              key={seat.id}
+  
+              seatNum={seat.seatNum}
+            />
+          ))}
+        </ul> 
+      );
+  }
+  
 export default SeatList;
