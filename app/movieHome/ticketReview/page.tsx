@@ -5,8 +5,9 @@ import MovieForm from '../../../components/movieComponents/movieForm'
 export default function about() {
 
   return (
-    <div>
+    <div className="flex flex-col min-h-screen items-center justify-center">
       <MovieReview/>
+     
       <MovieForm/>
     
   </div>

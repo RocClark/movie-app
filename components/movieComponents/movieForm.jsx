@@ -2,8 +2,8 @@ import MoiveItem from './movieItem';
 
 function MoiveForm(props) {
     return (
-<form >
-        <div>
+<form  className="" >
+        <div  >
           <label htmlFor='name'>Name</label>
           <input type='text' required id='name' />
         </div>

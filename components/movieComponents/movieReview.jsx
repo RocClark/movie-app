@@ -1,7 +1,7 @@
 
 function MovieReview() {
     return (
-        <main >
+        <main className="" >
         <div >
         <div>
             <p>
