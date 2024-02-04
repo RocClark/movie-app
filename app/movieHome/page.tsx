@@ -14,9 +14,14 @@ const MovieData = [
 
 export default function moiveHome() {
   return (
-  <div className='flex items-center justify-center min-h-screen bg-slate-900 '>
-    <Header/>
-  <MovieList movies= {MovieData}/>
+  <div className='flex flex-wrap items-center justify-center min-h-screen bg-slate-900 '>
+    <div className='w-full'>
+       <Header/>
+    </div>
+   
+    <div className=''>
+      <MovieList movies= {MovieData}/>
+    </div>
   
 <Link
   href="/"
