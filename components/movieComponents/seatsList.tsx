@@ -2,7 +2,7 @@ import SeatItem from './seatItems';
 
 function SeatList(props: { seats: any[]; }) {
       return (
-          <ul className="grid grid-cols-10 gap-x-1 ">
+          <ul className="grid grid-cols-10 gap-x-1 p-16">
           {props.seats.map((seat: { id: any; seatNum: any; }) => (
             <SeatItem
               key={seat.id}

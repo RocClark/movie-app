@@ -15,8 +15,26 @@ const SeatData = [
   {id: 8, seatNum: "8a" },
   {id: 9, seatNum: "9a" },
   {id: 10, seatNum: "10a" },
-  {id: 11, seatNum: "11a" },
-  {id: 12, seatNum: "12a" }
+  {id: 11, seatNum: "1b" },
+  {id: 12, seatNum: "2b" },
+  {id: 13, seatNum: "3b" },
+  {id: 14, seatNum: "4b" },
+  {id: 15, seatNum: "5b" },
+  {id: 16, seatNum: "6b" },
+  {id: 17, seatNum: "7b" },
+  {id: 18, seatNum: "8b" },
+  {id: 19, seatNum: "9b" },
+  {id: 20, seatNum: "10b" },
+  {id: 31, seatNum: "1c" },
+  {id: 32, seatNum: "2c" },
+  {id: 33, seatNum: "3c" },
+  {id: 34, seatNum: "4c" },
+  {id: 35, seatNum: "5c" },
+  {id: 36, seatNum: "6c" },
+  {id: 37, seatNum: "7c" },
+  {id: 38, seatNum: "8c" },
+  {id: 39, seatNum: "9c" },
+  {id: 30, seatNum: "10c" },
 ]
 
 
