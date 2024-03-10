@@ -38,7 +38,7 @@ const SeatData = [
   {id: 38, seatNum: "8c" },
   {id: 39, seatNum: "9c" },
   {id: 30, seatNum: "10c" },
-]
+];
 
 
 
