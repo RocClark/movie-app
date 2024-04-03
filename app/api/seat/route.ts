@@ -1,0 +1,73 @@
+import { NextResponse } from "next/server";
+
+const SeatData = [
+  {id: 1, seatNum: "1a", seatTaken: false },
+  {id: 2, seatNum: "2a", seatTaken: false },
+  {id: 3, seatNum: "3a", seatTaken: false },
+  {id: 4, seatNum: "4a", seatTaken: false },
+  {id: 5, seatNum: "5a", seatTaken: false },
+  {id: 6, seatNum: "6a", seatTaken: false },
+  {id: 7, seatNum: "7a", seatTaken: false },
+  {id: 8, seatNum: "8a", seatTaken: false },
+  {id: 9, seatNum: "9a", seatTaken: false },
+  {id: 10, seatNum: "10a", seatTaken: false },
+  {id: 11, seatNum: "1b", seatTaken: false },
+  {id: 12, seatNum: "2b", seatTaken: false },
+  {id: 13, seatNum: "3b", seatTaken: false },
+  {id: 14, seatNum: "4b", seatTaken: false },
+  {id: 15, seatNum: "5b", seatTaken: false },
+  {id: 16, seatNum: "6b", seatTaken: false },
+  {id: 17, seatNum: "7b", seatTaken: false },
+  {id: 18, seatNum: "8b", seatTaken: false },
+  {id: 19, seatNum: "9b", seatTaken: false },
+  {id: 20, seatNum: "10b", seatTaken: false },
+  {id: 21, seatNum: "1c", seatTaken: false },
+  {id: 22, seatNum: "2c", seatTaken: false },
+  {id: 23, seatNum: "3c", seatTaken: false },
+  {id: 24, seatNum: "4c", seatTaken: false },
+  {id: 25, seatNum: "5c", seatTaken: false },
+  {id: 26, seatNum: "6c", seatTaken: false },
+  {id: 27, seatNum: "7c", seatTaken: false },
+  {id: 28, seatNum: "8c", seatTaken: false },
+  {id: 29, seatNum: "9c", seatTaken: false  },
+  {id: 30, seatNum: "10c", seatTaken: false  },
+  {id: 31, seatNum: "1d", seatTaken: false  },
+  {id: 32, seatNum: "2d", seatTaken: false  },
+  {id: 33, seatNum: "3d", seatTaken: false  },
+  {id: 34, seatNum: "4d", seatTaken: false  },
+  {id: 35, seatNum: "5d", seatTaken: false  },
+  {id: 36, seatNum: "6d", seatTaken: false  },
+  {id: 37, seatNum: "7d", seatTaken: false  },
+  {id: 38, seatNum: "8d", seatTaken: false  },
+  {id: 39, seatNum: "9d", seatTaken: false  },
+  {id: 40, seatNum: "10d", seatTaken: false  },
+  {id: 41, seatNum: "1e",  seatTaken: false },
+  {id: 42, seatNum: "2e", seatTaken: false  },
+  {id: 43, seatNum: "3e", seatTaken: false  },
+  {id: 44, seatNum: "4e", seatTaken: false  },
+  {id: 45, seatNum: "5e", seatTaken: false  },
+  {id: 46, seatNum: "6e", seatTaken: false  },
+  {id: 47, seatNum: "7e", seatTaken: false  },
+  {id: 48, seatNum: "8e", seatTaken: false  },
+  {id: 49, seatNum: "9e" , seatTaken: false  },
+  {id: 50, seatNum: "10e", seatTaken: false  },
+  {id: 51, seatNum: "1f", seatTaken: false  },
+  {id: 52, seatNum: "2f", seatTaken: false  },
+  {id: 53, seatNum: "3f", seatTaken: false  },
+  {id: 54, seatNum: "4f", seatTaken: false  },
+  {id: 55, seatNum: "5f", seatTaken: false  },
+  {id: 56, seatNum: "6f", seatTaken: false  },
+  {id: 57, seatNum: "7f", seatTaken: false  },
+  {id: 58, seatNum: "8f", seatTaken: false  },
+  {id: 59, seatNum: "9f", seatTaken: false  },
+  {id: 60, seatNum: "10f", seatTaken: false  },
+  
+];
+
+export async function GET(request: Request) {
+  return NextResponse.json(SeatData || []);
+}
+
+export async function POST(request: Request) {
+  return NextResponse.json({ msg: "comming soon!" });
+}
