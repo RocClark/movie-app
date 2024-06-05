@@ -64,7 +64,7 @@ export default function Categories() {
         {formSuccess && <p style={{ color: "green" }}>{formSuccess}</p>}
       </form>
       <Link href="/">Home</Link>
-      {user.id}
+      userId = {user.id}
     </main>
   );
 }
