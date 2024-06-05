@@ -1,5 +1,10 @@
-//importfrom 
+import React from "react";
+import {MovieSelectContext} from "@/components/Contexts/ticketContext"
+
 function MoiveItem(props) {
+   
+   const { moviePiick, togglepick } = React.useContext(MovieSelectContext);
+
     return (
         <li className ="p-8 m-3 rounded-xl bg-slate-400">
            <div className= "">
@@ -11,22 +16,22 @@ function MoiveItem(props) {
         <div className =" m-5 ">
           <ul className ="grid grid-cols-3  border border-vilet-600">
             <li>
-               <button>1:30</button>
+               <button onClick={togglepick}>1:30</button>
             </li>
             <li>
-               <button>2:30</button>
+               <button onClick={togglepick}>2:30</button>
             </li>
             <li>
-               <button>3:30</button>
+               <button onClick={togglepick}>3:30</button>
             </li>
             <li>
-               <button>4:30</button>
+               <button onClick={togglepick}>4:30</button>
             </li>
             <li>
-               <button>5:30</button>
+               <button onClick={togglepick}>5:30</button>
             </li>
             <li>
-               <button>6:30</button>
+               <button onClick={togglepick}>6:30</button>
             </li>
           </ul>
          
