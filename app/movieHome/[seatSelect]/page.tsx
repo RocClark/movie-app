@@ -4,6 +4,7 @@ import MoiveScreen from '../../../components/movieComponents/movieScrean'
 import SeatList from '../../../components/movieComponents/seatsList'
 import MovieHeader from '../../../components/movieComponents/movieHeader'
 import { useEffect, useState, useContext } from 'react'
+import Link from 'next/link'
 
 
 export default function SeatSelect() {
@@ -26,7 +27,12 @@ export default function SeatSelect() {
         </div>
 
     <div >
-          <button>next btn</button>
+      <Link
+                  href="/movieHome/ticketReview"
+                    className=" sm:px-4 lg:px-8 text-1xl font-bold tracking-tight text-white">
+                        ticket review
+      </Link>
+          
         </div>
   </div>
   )
