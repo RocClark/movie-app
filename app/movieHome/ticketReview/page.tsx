@@ -4,7 +4,7 @@ import MovieForm from '../../../components/movieComponents/movieForm'
 import MovieHeader from '../../../components/movieComponents/movieHeader'
 import Link from 'next/link'
 
-export default function about() {
+export default function TicketReview() {
 
   return (
     <div>

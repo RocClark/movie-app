@@ -10,10 +10,10 @@ function MoiveItem(props) {
         </div>
          <div className =" m-5 ">
          <Link
-              href="/movieHome/selectTime"
-                className=" sm:px-4 lg:px-8 text-1xl font-bold tracking-tight text-white">
-               Time
-            </Link>
+          href="/movieHome/selectTime"
+            className=" sm:px-4 lg:px-8 text-1xl font-bold tracking-tight text-white">
+              Time
+        </Link>
           
          </div>
       

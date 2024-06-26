@@ -2,28 +2,58 @@ import Image from 'next/image'
 import MovieHeader from '../../../components/movieComponents/movieHeader'
 import Link from 'next/link'
 
-export default function about() {
+export default function TimeSelect() {
+
+   
   return (
     <div>
       <MovieHeader/>
-      <ul className ="grid grid-cols-3  border border-vilet-600">
-            <li>
-               <button>1:30</button>
+      <ul className ="grid grid-cols-3 ">
+            <li className="p-4 m-5" >
+               <Link
+               href="/movieHome"
+                 className="p-4 m-4 max-w-2 rounded-xl bg-slate-400 content-center text-2xl">
+                  1:30
+             </Link>
             </li>
-            <li>
-               <button>2:30</button>
+            <li className="p-4 m-4">
+            <Link
+               href="/movieHome"
+                 className="p-4 m-6 max-w-2 rounded-xl bg-slate-400 content-center text-2xl">
+                   2:30
+             </Link>
             </li>
-            <li>
-               <button>3:30</button>
+            <li className="p-4 m-4">
+                   <Link
+               href="/movieHome"
+                 className="p-4 m-6 max-w-2 rounded-xl bg-slate-400 content-center text-2xl">
+                   3:30
+             </Link>
+              
             </li>
-            <li>
-               <button>4:30</button>
+            <li className="p-4 m-4">
+                   <Link
+               href="/movieHome"
+                 className="p-4 m-6 max-w-2 rounded-xl bg-slate-400 content-center text-2xl">
+                   4:30
+             </Link>
+              
             </li>
-            <li>
-               <button>5:30</button>
+            <li className="p-4 m-4">
+                   <Link
+               href="/movieHome"
+                 className="p-4 m-6 max-w-2 rounded-xl bg-slate-400 content-center text-2xl">
+                   5:30
+             </Link>
+              
             </li>
-            <li>
-               <button>6:30</button>
+            <li className="p-4 m-4">
+                   <Link
+               href="/movieHome"
+                 className="p-4 m-6 max-w-2 rounded-xl bg-slate-400 content-center text-2xl">
+                   6:30
+             </Link>
+               
             </li>
           </ul>
           <div>
