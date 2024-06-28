@@ -5,6 +5,7 @@ export default function Confermation() {
   return (
     <div>
       <MovieHeader/>
+      
       <h1> Confermation page in progress</h1>
     </div>
     
