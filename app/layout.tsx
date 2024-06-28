@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/context";
 import { Sidebar } from "@/components/sidebar";
+import { PickProvider } from "@/components/Contexts/ticketContext";
+import { UserProvider } from "@/components/Contexts/userContext";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,10 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <UserProvider>
+       <PickProvider>
         <ThemeProvider>
           <Sidebar />
           {children}
         </ThemeProvider>
+      </PickProvider>
+      </UserProvider>
       </body>
     </html>
   );

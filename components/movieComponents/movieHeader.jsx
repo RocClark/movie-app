@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-function Header() {
+export default function Header() {
     return (
         <div className="navbar">
             <header className="flex bg-white shadow ">
@@ -28,16 +28,21 @@ function Header() {
                     className=" sm:px-4 lg:px-8 text-1xl font-bold tracking-tight text-gray-900">
                         end page
                 </Link>
+                <Link
+                  href="/movieHome/signupPage"
+                    className=" sm:px-4 lg:px-8 text-1xl font-bold tracking-tight text-gray-900">
+                        signup page
+                </Link>
                 </div>
             </header>
         </div>
     );
 }
 
-export default Header;
-<Link
-  href="/"
-  className=" sm:px-4 lg:px-8 text-1xl font-bold tracking-tight text-gray-900"
->
-Home
-</Link>
+// export default Header;
+// <Link
+//   href="/"
+//   className=" sm:px-4 lg:px-8 text-1xl font-bold tracking-tight text-gray-900"
+// >
+// Home
+// </Link>

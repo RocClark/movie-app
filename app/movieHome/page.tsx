@@ -1,10 +1,10 @@
 'use client'
 
 import Image from 'next/image'
-import Header from '../../components/movieComponents/movieHeader' 
 import Link from 'next/link'
-import MovieList from '../../components/movieComponents/movieList'
+import MovieList from '@/components/movieComponents/movieList'
 import { useEffect, useState } from 'react'
+import Header from '@/components/movieComponents/movieHeader'
 
 export default function MoiveHome() {
   const [movies, setMovies] = useState([]);
