@@ -28,6 +28,16 @@ function Header() {
                     className=" sm:px-4 lg:px-8 text-1xl font-bold tracking-tight text-gray-900">
                         end page
                 </Link>
+                <Link
+                  href="/movieHome/signup"
+                    className=" sm:px-4 lg:px-8 text-1xl font-bold tracking-tight text-gray-900">
+                        SignUp
+                </Link>
+                <Link
+                  href="/movieHome/logIn"
+                    className=" sm:px-4 lg:px-8 text-1xl font-bold tracking-tight text-gray-900">
+                        Login
+                </Link>
                 </div>
             </header>
         </div>
