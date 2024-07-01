@@ -1,19 +1,57 @@
 
 function SignUpForm() {
     return (
-<form  className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" >
-  <div className=" mb-4" >
-    <label className= "block text-gray-700 text-sm font-bold mb-2" htmlFor='name'>Name</label>
-    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type='text' requiredid='name' />
+
+      <div class="bg-grey-lighter min-h-screen flex flex-col">
+      <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+          <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
+              <h1 class="mb-8 text-3xl text-center">Sign up</h1>
+              <input 
+                  type="text"
+                  class="block border border-grey-light w-full p-3 rounded mb-4"
+                  name="fullname"
+                  placeholder="Full Name" />
+
+              <input 
+                  type="text"
+                  class="block border border-grey-light w-full p-3 rounded mb-4"
+                  name="email"
+                  placeholder="Email" />
+
+              <input 
+                  type="password"
+                  class="block border border-grey-light w-full p-3 rounded mb-4"
+                  name="password"
+                  placeholder="Password" />
+              <input 
+                  type="password"
+                  class="block border border-grey-light w-full p-3 rounded mb-4"
+                  name="confirm_password"
+                  placeholder="Confirm Password" />
+
+              <button
+                  type="submit"
+                  class="w-full text-center py-3 rounded bg-green text-white hover:bg-green-dark focus:outline-none my-1"
+              >Create Account</button>
+
+              <div class="text-center text-sm text-grey-dark mt-4">
+                  By signing up, you agree to the 
+                  <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
+                      Terms of Service
+                  </a> 
+                  
+              </div>
+          </div>
+
+          <div class="text-grey-dark mt-6">
+              Already have an account? 
+              <a class="no-underline border-b border-blue text-blue" href="/movieHome/logIn">
+                  Log in
+              </a>.
+          </div>
+      </div>
   </div>
-  <div className=" mb-4" >
-    <label className= "block text-gray-700 text-sm font-bold mb-2" htmlFor='fakeCard'>Password</label>
-    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type='text' required id='fakeCard' />
-  </div>
-  <div >
-    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ">finish</button>
-  </div>
-</form>
+
     );
 }
 

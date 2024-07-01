@@ -20,20 +20,18 @@ export default function SeatSelect() {
   <div>
      <MovieHeader/>
     <MoiveScreen/>
-    {/* <SeatList seats= {SeatData}/> */}
+      <div >
+        <p>show number of seats</p>
+      </div>
     {seat.length > 0 ? <SeatList seats={seat} /> : "Loading..."}
-    <div >
-          <p>show number of seats</p>
-        </div>
-
-    <div >
+  
+    <div className=" text-center p-8 ">
       <Link
-                  href="/movieHome/ticketReview"
-                    className=" sm:px-4 lg:px-8 text-1xl font-bold tracking-tight text-white">
-                        ticket review
-      </Link>
-          
-        </div>
+        href="/movieHome/ticketReview"
+        className=" sm:px-4 lg:px-8 bg-[#33a2d9] text-2xl font-bold tracking-tight text-white rounded-md border-4 border-sky-700">
+           Review you Ticket
+      </Link>      
+    </div>
   </div>
   )
 }
