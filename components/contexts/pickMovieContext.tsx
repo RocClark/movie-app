@@ -13,8 +13,9 @@ export const MovieProvider = ({
 }: Readonly<{ children: React.ReactNode }>) => {
   const [movie, setMovie] = React.useState("no moive");
   const pickMovie = () => {
-    setMovie((prev) => (prev === "no moive" ? "Movie picked" : "no moive"));
     console.log("Movie picked");
+    setMovie((prev) => (prev === "no moive" ? "Movie picked" : "no moive"));
+    
   };
 
   return (
