@@ -2,12 +2,12 @@
 
 import React from "react";
 
-export const TimeContext = React.createContext({
+export const SeatsContext = React.createContext({
   seats: "no seats Picked",
   pickSeats: () => {},
 });
 
-export const TimeProvider = ({
+export const SeatsProvider = ({
   children,
 }: Readonly<{ children: React.ReactNode }>) => {
   const [seats, setSeats] = React.useState("no seats Picked");
@@ -18,14 +18,14 @@ export const TimeProvider = ({
   };
 
   return (
-    <TimeContext.Provider
+    <SeatsContext.Provider
       value={{
         seats,
         pickSeats,
       }}
     >
       {children}
-    </TimeContext.Provider>
+    </SeatsContext.Provider>
   );
 };
 
