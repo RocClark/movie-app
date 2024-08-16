@@ -1,12 +1,19 @@
+"use client"; 
 import Link from "next/link";
+import React from "react";
+import { TicketReviewContext } from "../contexts/ticketContext";
+
 function MovieReview() {
+   const {ticket} = React.useContext(TicketReviewContext);
+  
+
   return (
     <div className="bg-grey-lighter min-h-screen flex flex-col">
     <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
       <div className="bg-white px-6 py-8 rounded shadow-md text-black w-full">
-      <h1 className="mb-8 text-3xl text-center">Sign up</h1>
+      <h1 className="mb-8 text-3xl text-center">Cart</h1>
       <p className="block border border-grey-light w-full p-3 rounded mb-4">
-          Movie name
+          {ticket.movie}
       </p>
 
       <p className="block border border-grey-light w-full p-3 rounded mb-4">
@@ -14,7 +21,7 @@ function MovieReview() {
       </p>
 
       <p className="block border border-grey-light w-full p-3 rounded mb-4">
-        movie time
+        {ticket.time}
       </p>
       <p className="block border border-grey-light w-full p-3 rounded mb-4">
         movie price
@@ -27,6 +34,7 @@ function MovieReview() {
       </Link>       
       </div>
     </div>
+    
   </div>
   );
   }
