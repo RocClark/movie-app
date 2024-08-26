@@ -16,10 +16,19 @@ function MovieReview() {
           {ticket.movie}
       </p>
 
-      <p className="block border border-grey-light w-full p-3 rounded mb-4">
-        number of seats
-      </p>
-
+      <div className="block border border-grey-light w-full p-3 rounded mb-4">
+            Number of seats:
+            {ticket.seats.length > 0 ? (
+              <ul className="list-disc ml-5">
+                {ticket.seats.map((seat, index) => (
+                  <li key={index}>{seat.seatNumber}</li>
+                ))}
+              </ul>
+            ) : (
+              <span> No seats selected</span>
+            )}
+          </div>
+          
       <p className="block border border-grey-light w-full p-3 rounded mb-4">
         {ticket.time}
       </p>
