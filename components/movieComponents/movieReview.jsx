@@ -28,12 +28,12 @@ function MovieReview() {
               <span> No seats selected</span>
             )}
           </div>
-          
+
       <p className="block border border-grey-light w-full p-3 rounded mb-4">
         {ticket.time}
       </p>
       <p className="block border border-grey-light w-full p-3 rounded mb-4">
-        movie price
+        movie price $11
       </p>
 
       <Link
