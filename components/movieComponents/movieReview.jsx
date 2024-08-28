@@ -4,7 +4,7 @@ import React from "react";
 import { TicketReviewContext } from "../contexts/ticketContext";
 
 function MovieReview() {
-   const {ticket} = React.useContext(TicketReviewContext);
+   const {ticket,totalPrice} = React.useContext(TicketReviewContext);
   
 
   return (
@@ -33,7 +33,7 @@ function MovieReview() {
         {ticket.time}
       </p>
       <p className="block border border-grey-light w-full p-3 rounded mb-4">
-        movie price $11
+      Movie price: ${totalPrice}
       </p>
 
       <Link

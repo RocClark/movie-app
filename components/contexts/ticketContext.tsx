@@ -16,12 +16,15 @@ export const TicketReviewContext = React.createContext({
     pickTime: (newTime: string) => {},
     selectSeat: (seat: { seatNumber: string }) => {},
     purchaseTicket: () => {},
+    totalPrice: 0,  // Add totalPrice to the context
     
   });
   
   export const TicketProvider = ({
     children,
   }: Readonly<{ children: React.ReactNode }>) => {
+    const pricePerSeat = 11; // Define the price per seat
+
     const [ticket, setTicket] = React.useState<{
         movie: string;
         time: string;
@@ -63,6 +66,8 @@ export const TicketReviewContext = React.createContext({
     });
   };
 
+  const totalPrice = ticket.seats.length * pricePerSeat;
+
   const purchaseTicket = () => {
     console.log("Ticket purchased");
     setTicket((prev) => ({ ...prev, purchased: true }));
@@ -75,6 +80,7 @@ export const TicketReviewContext = React.createContext({
             pickMovie,
             pickTime,
             selectSeat,
+            totalPrice,
             purchaseTicket,
         }}
       >
