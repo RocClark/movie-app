@@ -16,10 +16,10 @@ import {TicketReviewContext } from '../contexts/ticketContext';
 
     return (
       <li className =" p-6 m-3 rounded-xl bg-slate-400">
-        <div className= "">
+        <div >
           <h3 className="font-serif text-2xl text-center ">{props.title}</h3>
         </div>
-        <div className>
+        <div >
           <h3 className="h-36 w-72 m-5 bg-[#313334] rounded-md border-4 border-sky-700">movie poster</h3>
         </div>
         <div className ="text-center  "> 
