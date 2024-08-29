@@ -3,7 +3,7 @@
 import MoiveScreen from '../../../components/movieComponents/movieScrean'
 import SeatList from '../../../components/movieComponents/seatsList'
 import MovieHeader from '../../../components/movieComponents/movieHeader'
-import { useEffect, useState, useContext } from 'react'
+import { useEffect, useState,  } from 'react'
 import Link from 'next/link'
 
 

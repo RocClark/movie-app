@@ -3,6 +3,10 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/context";
 import { Sidebar } from "@/components/sidebar";
+import { MovieProvider } from "@/components/contexts/pickMovieContext";
+import { TimeProvider } from "@/components/contexts/pickMovieTimeContext";
+import { SeatsProvider } from "@/components/contexts/pickSeatContext";
+import { TicketProvider } from "@/components/contexts/ticketContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +24,16 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider>
-          <Sidebar />
-          {children}
+          <TicketProvider>
+          <MovieProvider>
+            <TimeProvider>
+              <SeatsProvider>
+                <Sidebar/>
+                {children}
+            </SeatsProvider>
+          </TimeProvider>
+          </MovieProvider>
+          </TicketProvider>
         </ThemeProvider>
       </body>
     </html>

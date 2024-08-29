@@ -12,11 +12,7 @@ export default function Payment() {
         <h1> Payment page in progress</h1>
         <MovieForm/>
 
-        <Link
-          href="/movieHome/confermation"
-            className=" sm:px-4 lg:px-8 text-1xl font-bold tracking-tight text-white">
-              confermation
-        </Link>
+
       </div>
       
      

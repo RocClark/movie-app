@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { TicketReviewContext } from "../contexts/ticketContext";
 
-function MovieReview() {
+function ReviewTicket() {
    const {ticket} = React.useContext(TicketReviewContext);
   
 
@@ -17,7 +17,7 @@ function MovieReview() {
       </p>
 
       <div className="block border border-grey-light w-full p-3 rounded mb-4">
-            Number of seats:
+            seats Number:
             {ticket.seats.length > 0 ? (
               <ul className="list-disc ml-5">
                 {ticket.seats.map((seat, index) => (
@@ -29,7 +29,7 @@ function MovieReview() {
             )}
           </div>
       <p className="block border border-grey-light w-full p-3 rounded mb-4">
-        {ticket.seatCount}
+        Number of seats: {ticket.seatCount}
       </p>
       <p className="block border border-grey-light w-full p-3 rounded mb-4">
         {ticket.time}
@@ -37,11 +37,13 @@ function MovieReview() {
       <p className="block border border-grey-light w-full p-3 rounded mb-4">
       Movie price: {ticket.totalPrice}
       </p>
-
+      <p className="block border border-grey-light w-full p-3 rounded mb-4">
+      Ticket purchased: {ticket.purchased ? 'True' : 'False'}
+      </p>
       <Link
-        href="/movieHome/payment"
+        href="/"
         className=" sm:px-4 lg:px-8 bg-[#33a2d9] text-2xl font-bold tracking-tight text-white rounded-md border-4 border-sky-700">
-           Buy your Ticket
+           back to Home Page
       </Link>       
       </div>
     </div>
@@ -50,4 +52,4 @@ function MovieReview() {
   );
   }
   
-  export default MovieReview;
+  export default ReviewTicket;
