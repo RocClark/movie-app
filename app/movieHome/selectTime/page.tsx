@@ -16,7 +16,7 @@ export default function TimeSelect() {
     }, []); 
    
   return ( 
-    <div>
+    <div className="flex flex-col min-h-screen items-center justify-center">
       {times.length > 0 ? <TimeList times={times} /> : "Loading..."}
     <div>
     <Link
