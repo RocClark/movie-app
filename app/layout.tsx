@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/context";
-import { Sidebar } from "@/components/sidebar";
-import { MovieProvider } from "@/components/contexts/pickMovieContext";
-import { TimeProvider } from "@/components/contexts/pickMovieTimeContext";
-import { SeatsProvider } from "@/components/contexts/pickSeatContext";
+
 import { TicketProvider } from "@/components/contexts/ticketContext";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,18 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeProvider>
+        
           <TicketProvider>
-          <MovieProvider>
-            <TimeProvider>
-              <SeatsProvider>
-                <Sidebar/>
                 {children}
-            </SeatsProvider>
-          </TimeProvider>
-          </MovieProvider>
           </TicketProvider>
-        </ThemeProvider>
+        
       </body>
     </html>
   );
