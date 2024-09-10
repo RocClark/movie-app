@@ -1,12 +1,10 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
-import { PickMovieContext } from '../contexts/pickMovieContext';
 import {TicketReviewContext } from '../contexts/ticketContext';
 
 
   function MoiveItem(props) {
-   // const { movie, pickMovie } = React.useContext(PickMovieContext);
     const { ticket, pickMovie } = React.useContext(TicketReviewContext);
 
     const handlePickMovie = () => {

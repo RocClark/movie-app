@@ -1,12 +1,10 @@
 import React from "react";
-import { ThemeContext } from "@/components/context";
-import { SeatsContext } from "../contexts/pickSeatContext";
+
 import {TicketReviewContext } from '../contexts/ticketContext';
 
 
 function SeatItem(props) {
-    const { theme, toggleTheme } = React.useContext(ThemeContext);
-    const { seats, pickSeats } = React.useContext(SeatsContext);
+  
     const { ticket, selectSeat } = React.useContext(TicketReviewContext);
 
     // Check if the seat is already selected

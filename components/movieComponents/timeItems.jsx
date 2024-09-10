@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
-import { TimeContext } from '../contexts/pickMovieTimeContext';
+
 import {TicketReviewContext } from '../contexts/ticketContext';
 
 
   function TimeItem(props) {
-    //const { time, pickTime } = React.useContext(TimeContext);
+ 
     const { ticket, pickTime } = React.useContext(TicketReviewContext);
     
     const handlePickTime = () => {
