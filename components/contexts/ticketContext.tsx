@@ -54,30 +54,38 @@ export const TicketProvider = ({
         }));
     };
 
+ 
     const selectSeat = (newSeat: { seatNumber: string }) => {
         console.log("Seat selected", newSeat);
 
-        // Check if the seat is already selected
         setTicket((prev) => {
             const isSeatAlreadySelected = prev.seats.some(
                 (seat) => seat.seatNumber === newSeat.seatNumber
             );
 
+            // If the seat is already selected, remove it from the array (deselect)
             if (isSeatAlreadySelected) {
-                console.log("Seat already selected", newSeat.seatNumber);
-                return prev; // Return the previous state if the seat is already selected
+                const updatedSeats = prev.seats.filter(
+                    (seat) => seat.seatNumber !== newSeat.seatNumber
+                );
+                return {
+                    ...prev,
+                    seats: updatedSeats,
+                    seatCount: updatedSeats.length, // Update seatCount
+                    totalPrice: updatedSeats.length * pricePerSeat, // Update totalPrice
+                };
             }
 
-            // Add the new seat to the array if not already selected
+            // If the seat is not selected, add it to the array (select)
             const newSeats = [...prev.seats, newSeat];
             return {
                 ...prev,
                 seats: newSeats,
-                seatCount: newSeats.length,              // Update seatCount
-                totalPrice: newSeats.length * pricePerSeat // Update totalPrice
+                seatCount: newSeats.length, // Update seatCount
+                totalPrice: newSeats.length * pricePerSeat, // Update totalPrice
             };
         });
-    };
+    }
 
     const purchaseTicket = () => {
         console.log("Ticket purchased");
