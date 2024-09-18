@@ -1,8 +1,8 @@
+import React from 'react';
 
-function Answer() {
-      return (
-          <p> This is the answer component </p>
-      );
-  }
+const Answer = ({ answer }) => {
+    return <h2>{answer ? answer : 'Ask a question!'}</h2>;
+  };
+  
   
 export default Answer;
