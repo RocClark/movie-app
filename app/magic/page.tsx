@@ -25,17 +25,21 @@ export default function MagicBall() {
   };
 
   return (
-    <div>
-      <h1>Magic 8 Ball</h1>
-      
-      {/* Button to trigger getResponse function */}
-      <button onClick={getResponse}>Ask the Magic 8 Ball</button>
+    <div className="h-screen flex flex-col items-center justify-center">
+    <h1 className="text-3xl font-bold mb-6">Magic 8 Ball</h1>
 
+    {/* Button to trigger getResponse function */}
+    <button 
+      onClick={getResponse} 
+      className="mb-4 px-4 py-2 bg-blue-700 text-white rounded">
+      Ask the Magic 8 Ball
+    </button>
+    
+    <div className="flex items-center justify-center h-80 w-80 bg-blue-500 text-white rounded-full text-center text-xl">
       {/* Display the random answer */}
       <Answer answer={randomAnswer} />
-
-      
     </div>
+  </div>
 );
 };
 

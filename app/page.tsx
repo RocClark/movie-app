@@ -15,10 +15,10 @@ export default function Home() {
         </div>
         <div>
           <Link
-            href="/resume"
+            href="/magic"
             className="dark:bg-slate-900 bg-slate-400 my-4 p-3 rounded-lg block"
           >
-            Resume
+            magic 8 Ball
           </Link>
         </div>
         <div>
