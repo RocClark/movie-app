@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import Answer from '../../components/magicComponents/answers';
 
 export default function MagicBall() {
@@ -31,6 +32,7 @@ export default function MagicBall() {
   return (
     <div className="h-screen flex flex-col items-center justify-center">
       <h1 className="text-3xl font-bold mb-6">Magic 8 Ball</h1>
+    
 
       <button
         onClick={getResponse}
@@ -44,6 +46,11 @@ export default function MagicBall() {
       >
         <Answer answer={randomAnswer} />
       </div>
+      <Link
+        href="/"
+          className=" text-lg h-8 w-48 m-4 p-8 rounded-md  text-center">
+             Home page
+      </Link>
     </div>
   );
 }
