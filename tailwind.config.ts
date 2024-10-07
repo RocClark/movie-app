@@ -13,8 +13,19 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+     // Add custom animation here
+     keyframes: {
+      shake: {
+        '0%, 100%': { transform: 'translateX(0)' },
+        '20%, 60%': { transform: 'translateX(-10px)' },
+        '40%, 80%': { transform: 'translateX(10px)' },
+      },
+    },
+    animation: {
+      shake: 'shake 0.5s ease-in-out',
     },
   },
+},
   plugins: [],
 }
 export default config
