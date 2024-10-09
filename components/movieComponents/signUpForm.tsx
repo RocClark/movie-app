@@ -28,7 +28,7 @@ function SignUpForm() {
         setFormError(""); // Clear error message on success
 
         // Update the user in the context
-        updateUser({ name: username, id: username + "ID" }); // Adjust the id as needed
+        updateUser({ name: username, id: username  }); // Adjust the id as needed
     };
 
     return (
@@ -74,7 +74,7 @@ function SignUpForm() {
                 </div>
 
                 <Link href="/">Home</Link>
-                <p>User ID: {user.id}</p>
+                
 
                 <div className="text-grey-dark mt-6">
                     Already have an account? 

@@ -35,7 +35,7 @@ function ReviewTicket() {
         {ticket.time}
       </p>
       <p className="block border border-grey-light w-full p-3 rounded mb-4">
-      Movie price: {ticket.totalPrice}
+      Movie price: ${ticket.totalPrice}
       </p>
       <p className="block border border-grey-light w-full p-3 rounded mb-4">
       Ticket purchased: {ticket.purchased ? 'True' : 'False'}

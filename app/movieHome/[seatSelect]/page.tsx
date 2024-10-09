@@ -21,7 +21,7 @@ export default function SeatSelect() {
      <MovieHeader/>
     <MoiveScreen/>
       <div >
-        <p>show number of seats</p>
+        <p>Threaten background by Photo by Geoffrey Moffett on Unsplash</p>
       </div>
     {seat.length > 0 ? <SeatList seats={seat} /> : "Loading..."}
   

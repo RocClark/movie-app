@@ -14,7 +14,7 @@ export default function TicketReview() {
         <Link
           href="/movieHome/payment"
             className=" sm:px-4 lg:px-8 text-1xl font-bold tracking-tight text-white">
-              end Page
+              payment
         </Link>
       </div>
   </div>
