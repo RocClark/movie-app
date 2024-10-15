@@ -1,39 +1,49 @@
 'use client';
-import { useContext } from "react";
+import { useState, useContext } from "react";
 import { UserContext } from "../contexts/userContext"; 
 import Link from 'next/link'
 
 function Header() {
   const { user } = useContext(UserContext); // Destructure user from the context
+  const [menuOpen, setMenuOpen] = useState(false); // State to toggle menu
 
-    return (
-        <div className="navbar">
-            <header className="flex bg-white shadow ">
-                <div className="absolute left-0 mx-auto max-w-9xl  py-4 ">
-                <h1 className=" text-3xl font-bold tracking-tight text-gray-900">MovieTitle</h1>
-                </div>
-                <div className="flex right-0 mx-auto max-w-9xl px-2 py-4 sm:px-4 lg:px-1">
-                <p className=" sm:px-4 lg:px-8 text-1xl font-bold tracking-tight text-gray-900">Hello: {user?.id}</p>
-                <Link
-                  href="/movieHome"
-                    className=" sm:px-4 lg:px-8 text-1xl font-bold tracking-tight text-gray-900">
-                        Home
-                </Link>
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen); // Toggle menu open/close
+  };
 
-                <Link
-                  href="/movieHome/signup"
-                    className=" sm:px-4 lg:px-8 text-1xl font-bold tracking-tight text-gray-900">
-                        SignUp
-                </Link>
-                <Link
-                  href="/movieHome/logIn"
-                    className=" sm:px-4 lg:px-8 text-1xl font-bold tracking-tight text-gray-900">
-                        Login
-                </Link>
-                </div>
-            </header>
+  return (
+    <div className="navbar bg-white shadow">
+      <header className="flex items-center justify-between px-4 py-4">
+        {/* Logo */}
+        <h1 className="text-3xl font-bold tracking-tight text-gray-900">MovieTitle</h1>
+        
+        {/* Hamburger Icon */}
+        <div className="lg:hidden">
+          <button onClick={toggleMenu} className="focus:outline-none">
+            <svg className="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
         </div>
-    );
+
+        {/* Links for larger screens */}
+        <div className="hidden lg:flex items-center space-x-8">
+          <p className="text-1xl font-bold tracking-tight text-gray-900">Hello: {user?.id}</p>
+          <Link href="/movieHome" className="text-1xl font-bold tracking-tight text-gray-900">Home</Link>
+          <Link href="/movieHome/signup" className="text-1xl font-bold tracking-tight text-gray-900">SignUp</Link>
+          <Link href="/movieHome/logIn" className="text-1xl font-bold tracking-tight text-gray-900">Login</Link>
+        </div>
+
+        {/* Menu for smaller screens */}
+        <div className={`${menuOpen ? 'block' : 'hidden'} lg:hidden absolute top-16 right-4 bg-white shadow-lg rounded-md w-48`}>
+          <p className="block px-4 py-2 text-gray-900 font-bold">Hello: {user?.id}</p>
+          <Link href="/movieHome" className="block px-4 py-2 text-gray-900 font-bold">Home</Link>
+          <Link href="/movieHome/signup" className="block px-4 py-2 text-gray-900 font-bold">SignUp</Link>
+          <Link href="/movieHome/logIn" className="block px-4 py-2 text-gray-900 font-bold">Login</Link>
+        </div>
+      </header>
+    </div>
+  );
 }
 
 export default Header;

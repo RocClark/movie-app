@@ -24,12 +24,6 @@ export default function SelectMovie() {
    {movies.length > 0 ? <MovieList movies={movies} /> : "Loading..."}
    </div>
  
-<Link
- href="/"
- className="dark:bg-slate-900 bg-slate-400 my-4 p-3 rounded-lg block"
->
-return to home page.
-</Link>
 </div>
   )
 }

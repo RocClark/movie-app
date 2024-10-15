@@ -42,7 +42,8 @@ export default function MagicBall() {
       </button>
 
       <div
-        className={`flex items-center justify-center h-80 w-80 bg-blue-500 text-white rounded-full text-center text-xl ${isShaking ? 'animate-shake' : ''}`}
+        className={`flex items-center justify-center bg-blue-500 text-white rounded-full text-center text-xl 
+        h-60 w-60 sm:h-56 sm:w-56 lg:h-96 lg:w-96 ${isShaking ? 'animate-shake' : ''}`}
       >
         <Answer answer={randomAnswer} />
       </div>
