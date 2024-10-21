@@ -17,7 +17,7 @@ export default function SeatSelect() {
   }, []);
 
   return (
-  <div>
+  <div className='bg-slate-900'>
      <MovieHeader/>
     <MoiveScreen/>
       <div >

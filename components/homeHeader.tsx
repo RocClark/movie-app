@@ -7,7 +7,7 @@ interface HomeHeaderProps {
 }
 
 function HomeHeader({ onPageChange }: HomeHeaderProps) {
-  const [activePage, setActivePage] = useState<string | null>(null); // Define type explicitly
+  const [, setActivePage] = useState<string | null>(null); // Define type explicitly
   const [menuOpen, setMenuOpen] = useState(false); // State to toggle menu
 
   const toggleMenu = () => {

@@ -77,7 +77,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex flex-col min-h-screen relative">
+    <main className="flex flex-col min-h-screen relative bg-slate-900">
       <div className="fixed top-0 w-full z-10">
         <HomeHeader onPageChange={setActivePage} />
       </div>

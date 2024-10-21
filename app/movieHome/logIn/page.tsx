@@ -4,7 +4,7 @@ import LogInForm from '../../../components/movieComponents/logInForm'; // Import
 
 export default function LogIn() {
   return (
-    <div>
+    <div className='bg-slate-900'>
       <MovieHeader/>
       <h1> LogIn Page Work in progress</h1>
       <div className="flex justify-center h-4/6  m-2 px-6  pt-24">

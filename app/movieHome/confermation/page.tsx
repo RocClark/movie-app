@@ -4,7 +4,7 @@ import ReviewTicket from '../../../components/movieComponents/reviewTicket' // I
 
 export default function Confermation() {
   return (
-    <div>
+    <div className='bg-slate-900'>
       <MovieHeader/>
       
       
