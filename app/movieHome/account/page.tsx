@@ -6,7 +6,7 @@ export default function Account() {
   return (
     
 
-    <div>
+    <div className='bg-slate-900'>
       <MovieHeader/>
       <div className="flex flex-col min-h-screen items-center justify-center dark:bg-sky-700 ">
         

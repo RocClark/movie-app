@@ -4,10 +4,10 @@ import ReviewTicket from '../../../components/movieComponents/reviewTicket' // I
 
 export default function Confermation() {
   return (
-    <div>
+    <div className='bg-slate-900'>
       <MovieHeader/>
       
-      <h1> Confermation page in progress</h1>
+      
       <ReviewTicket/>
     </div>
     

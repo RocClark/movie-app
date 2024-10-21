@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import { TicketProvider } from "@/components/contexts/ticketContext";
+import { UserProvider } from "@/components/contexts/userContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,9 @@ export default function RootLayout({
       <body className={inter.className}>
         
           <TicketProvider>
+          <UserProvider>
                 {children}
+          </UserProvider>
           </TicketProvider>
         
       </body>

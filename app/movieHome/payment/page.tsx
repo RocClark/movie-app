@@ -6,10 +6,9 @@ export default function Payment() {
   return (
     
 
-    <div>
+    <div className='bg-slate-900'>
       <MovieHeader/>
       <div className="flex flex-col min-h-screen items-center justify-center">
-        <h1> Payment page in progress</h1>
         <MovieForm/>
 
 
