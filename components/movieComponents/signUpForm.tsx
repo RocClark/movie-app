@@ -23,7 +23,6 @@ function SignUpForm() {
         }
 
         // Perform sign-up logic here
-        console.log("Form submitted:", { username, password });
         setFormSuccess("Sign-up successful!");
         setFormError(""); // Clear error message on success
 

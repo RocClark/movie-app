@@ -15,10 +15,9 @@ export const UserProvider = ({
 }: Readonly<{ children: React.ReactNode }>) => {
   const [user, setUser] = useState({
     name: "nameTest",
-    id: "someID",
+    id: "",
   });
   const updateUser = (newUser: { name: string; id: string }) => {
-    console.log("Updating user:", newUser);
     setUser(newUser);
     return true;
   };

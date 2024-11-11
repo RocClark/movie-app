@@ -39,7 +39,6 @@ export const TicketProvider = ({
     });
 
     const pickMovie = (newMovie: string) => {
-        console.log("Movie selected");
         setTicket((prev) => ({
             ...prev,
             movie: newMovie
@@ -47,7 +46,6 @@ export const TicketProvider = ({
     };
 
     const pickTime = (newTime: string) => {
-        console.log("Time selected");
         setTicket((prev) => ({
             ...prev,
             time: newTime
@@ -56,7 +54,6 @@ export const TicketProvider = ({
 
  
     const selectSeat = (newSeat: { seatNumber: string }) => {
-        console.log("Seat selected", newSeat);
 
         setTicket((prev) => {
             const isSeatAlreadySelected = prev.seats.some(
@@ -88,7 +85,6 @@ export const TicketProvider = ({
     }
 
     const purchaseTicket = () => {
-        console.log("Ticket purchased");
         setTicket((prev) => ({ ...prev, purchased: true }));
     };
 

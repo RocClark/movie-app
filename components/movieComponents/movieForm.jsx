@@ -20,7 +20,6 @@ function MoiveForm() {
             setFormValid(true); // Mark the form as valid to allow navigation
         } else {
             setFormValid(false); // Prevent navigation if the form is invalid
-            console.log("Please fill out all the fields.");
         }
     };
 
