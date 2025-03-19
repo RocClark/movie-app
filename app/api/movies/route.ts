@@ -12,7 +12,7 @@ const MovieData = [
     id: 2,
     title: "Revenge of the Jocks",
     description:
-      "The tables turn when a group of underdog nerds take on their high school bullies.",
+      "The tables turn when a group of underdog jocks take on their high school bullies.",
     image: "/AI Revenge of the Jocks.webp", // Fixed image path
   },
   {
@@ -26,7 +26,7 @@ const MovieData = [
     id: 4,
     title: "Dragon for a Day",
     description:
-      "A boy discovers he can transform into a dragon — but only until sunset.",
+      "A girl discovers she can transform into a dragon — but only until sunset.",
     image: "/dragon.webp", // Fixed image path
   },
   {
