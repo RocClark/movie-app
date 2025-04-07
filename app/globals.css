@@ -2,26 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Set default colors */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255; /* White text for contrast */
+  --background-start-rgb: 30, 27, 75;
+  --background-end-rgb: 30, 27, 75; /* Keep solid color without gradient */
 }
 
+/* Optional: Dark mode support (can be same or different color) */
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 30, 27, 75;
+    --background-end-rgb: 30, 27, 75;
   }
 }
 
+/* Apply colors */
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-start-rgb));
 }
